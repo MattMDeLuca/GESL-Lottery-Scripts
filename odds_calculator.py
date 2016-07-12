@@ -11,7 +11,6 @@ while True:
         break
     print
 
-
     del team_combos[pick]
     total_combos = 0
 
