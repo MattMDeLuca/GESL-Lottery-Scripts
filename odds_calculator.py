@@ -7,9 +7,10 @@ with open('combos.json') as f:
 while True:
     print
     pick = raw_input("Enter team chosen: ")
-    print
     if pick == "done":
         break
+    print
+
 
     del team_combos[pick]
     total_combos = 0
