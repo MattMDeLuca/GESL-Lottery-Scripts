@@ -31,4 +31,5 @@ for key, value in finaltest.items():
         writer.writerow([key, value])
 
 with open('combos.json', 'w') as fp:
-    json.dump(finaltest, fp)
+    json.dump(finaltest, indent=2, separators=[',', ':'])
+    fp.write(dump)
