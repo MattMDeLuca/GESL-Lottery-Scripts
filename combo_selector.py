@@ -16,8 +16,7 @@ for c in combinations:
     tm = teams[i]
     for t in range(combinations[i]):
         chosen_combo = random.choice(act_combos)
-        if chosen_combo not in finaltest.items():
-            finaltest[tm].append(chosen_combo)
+        act_combos.remove(chosen_combo)
 
 for key, value in finaltest.items():
     print key, len(value)
